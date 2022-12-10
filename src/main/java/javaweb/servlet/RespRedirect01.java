@@ -22,7 +22,8 @@ public class RespRedirect01 extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("doget...");
         resp.setStatus(302);
-        resp.setHeader("location","https://www.baidu.com");
+//        resp.setHeader("location","https://www.baidu.com");
+
 
 
     }
