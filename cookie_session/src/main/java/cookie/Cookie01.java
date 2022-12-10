@@ -34,6 +34,10 @@ public class Cookie01 extends HttpServlet {
 
         Cookie[] cookies = req.getCookies();
 
+        System.out.println(Arrays.toString(cookies));
+
+        System.out.println();
+        System.out.println();
         List<Cookie> cookies1 = Arrays.asList(cookies);
 
         cookies1.forEach(System.out::println);
