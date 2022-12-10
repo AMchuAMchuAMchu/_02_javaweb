@@ -24,7 +24,7 @@ public class ReqResp01 extends HttpServlet {
         String name = req.getParameter("name");
         System.out.println(name);
 
-        resp.setContentType("content-type,text/html;charset=utf-8");
+        resp.setContentType("text/html;charset=utf-8");
         resp.getWriter().write("<h1>我喜欢椎名真白...</h1>");
 
 
