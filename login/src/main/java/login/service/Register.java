@@ -46,8 +46,14 @@ public class Register extends HttpServlet {
 
         String password = req.getParameter("password");
 
-        int count = mapper.insertUser(username, password);
+        resp.setContentType("text/html;charset=utf-8");
+        int count = 0;
 
+        try {
+            count = mapper.insertUser(username, password);
+        } catch (Exception e) {
+            resp.getWriter().write("<h1>残念!!用户名已存在!!!!😅😅</h1>");
+        }
 
         if (count==0){
             resp.getWriter().write("<h1>残念!!注册失败!!!😥😥😥</h1>");
