@@ -40,7 +40,9 @@ public class Cookie01 extends HttpServlet {
         System.out.println();
         List<Cookie> cookies1 = Arrays.asList(cookies);
 
-        cookies1.forEach(System.out::println);
+        List<String> collect = cookies1.stream().map(c -> c.getName()).collect(Collectors.toList());
+
+        collect.forEach(System.out::println);
 
 
     }
