@@ -30,7 +30,7 @@ public class Register extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        System.out.println("dopost...");
+        System.out.println("login register dopost...");
 
         String format = DateTimeFormatter.ofPattern("yyyy年mm月dd日 hh时mm分ss秒").format(LocalDateTime.now());
 
