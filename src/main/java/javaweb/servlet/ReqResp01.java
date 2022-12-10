@@ -37,7 +37,7 @@ public class ReqResp01 extends HttpServlet {
 
         resp.setContentType("text/html;charset=utf-8");
 
-        resp.getWriter().write("我喜欢楪祈...");
+        resp.getWriter().write("<h1>我喜欢楪祈...</h1>");
 
 
     }
