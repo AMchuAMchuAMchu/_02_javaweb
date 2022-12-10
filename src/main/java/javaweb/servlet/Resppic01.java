@@ -36,12 +36,10 @@ public class Resppic01 extends HttpServlet {
             while ((len = fis.read(bytes))!=-1){
                 outputStream.write(bytes,0,len);
             }
-
             outputStream.flush();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-
             if (fis!=null) {
                 try {
                     fis.close();
@@ -57,9 +55,5 @@ public class Resppic01 extends HttpServlet {
                 }
             }
         }
-
-
-
-
     }
 }
