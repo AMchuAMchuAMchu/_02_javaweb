@@ -21,11 +21,14 @@ public class ReqResp01 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("doget...");
-        String name = req.getParameter("name");
-        System.out.println(name);
 
-        resp.setContentType("text/html;charset=utf-8");
-        resp.getWriter().write("<h1>我喜欢椎名真白...</h1>");
+//        HttpServlet httpServlet = new HttpServlet();
+
+//        String name = req.getParameter("name");
+//        System.out.println(name);
+//
+//        resp.setContentType("text/html;charset=utf-8");
+//        resp.getWriter().write("<h1>我喜欢椎名真白...</h1>");
     }
 
     @Override
