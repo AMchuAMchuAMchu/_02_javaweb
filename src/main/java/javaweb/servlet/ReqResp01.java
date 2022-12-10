@@ -26,6 +26,18 @@ public class ReqResp01 extends HttpServlet {
 
         resp.setContentType("text/html;charset=utf-8");
         resp.getWriter().write("<h1>我喜欢椎名真白...</h1>");
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        System.out.println("dopost...");
+
+        System.out.println(req.getParameter("username"));
+
+        resp.setContentType("text/html;charset=utf-8");
+
+        resp.getWriter().write("我喜欢楪祈...");
 
 
     }
