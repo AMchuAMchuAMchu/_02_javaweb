@@ -33,6 +33,8 @@ public class ReqResp01 extends HttpServlet {
 
         System.out.println("dopost...");
 
+        req.setCharacterEncoding("UTF-8");
+
         System.out.println(req.getParameter("username"));
 
         resp.setContentType("text/html;charset=utf-8");
