@@ -23,7 +23,7 @@ public class RespRedirect01 extends HttpServlet {
         System.out.println("doget...");
         resp.setStatus(302);
 //        resp.setHeader("location","https://www.baidu.com");
-
+        resp.sendRedirect("https://www.bilibili.com");
 
 
     }
