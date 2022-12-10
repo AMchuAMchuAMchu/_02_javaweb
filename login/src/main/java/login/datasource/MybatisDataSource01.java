@@ -22,7 +22,7 @@ public class MybatisDataSource01 {
 
         InputStream ras = null;
         try {
-            ras = Resources.getResourceAsStream("classpath:mybatis-config.xml");
+            ras = Resources.getResourceAsStream("mybatis-config.xml");
         } catch (IOException e) {
             e.printStackTrace();
         }
