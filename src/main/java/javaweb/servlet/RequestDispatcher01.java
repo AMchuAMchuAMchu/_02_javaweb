@@ -25,6 +25,8 @@ public class RequestDispatcher01 extends HttpServlet {
 
         System.out.println("reqdis01...");
 
+        req.setAttribute("name","楪祈Inori...");
+
         req.getRequestDispatcher("/reqdis02").forward(req,resp);
 
 

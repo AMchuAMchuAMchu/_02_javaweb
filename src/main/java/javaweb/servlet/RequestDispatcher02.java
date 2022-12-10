@@ -25,9 +25,7 @@ public class RequestDispatcher02 extends HttpServlet {
 
         System.out.println("reqdis02...");
 
-
-
-
+        System.out.println(req.getAttribute("name"));
 
 
     }
