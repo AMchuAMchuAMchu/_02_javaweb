@@ -41,7 +41,7 @@ public class Login extends HttpServlet {
 
         User user = mapper.selectUser(username);
 
-        resp.setContentType("text/html,charset=utf-8");
+        resp.setContentType("text/html;charset=utf-8");
 
         String format = DateTimeFormatter.ofPattern("yyyy年mm月dd日 hh时mm分ss秒").format(LocalDateTime.now());
 

@@ -22,7 +22,7 @@ public class ReqResp01 extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("doget...");
 
-//        HttpServlet httpServlet = new HttpServlet();
+//        HttpServlet httpServlet = new HttpServlet();1
 
 //        String name = req.getParameter("name");
 //        System.out.println(name);
