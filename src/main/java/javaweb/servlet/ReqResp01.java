@@ -15,7 +15,7 @@ import java.io.IOException;
  * CreateTime ==> 2022-12-10 08:26:54
  * Author ==> _02雪乃赤瞳楪祈校条祭_艾米丽可锦木千束木更七草荠_制作委员会_start
  */
-@WebServlet("/represp01")
+@WebServlet("/reqresp01")
 public class ReqResp01 extends HttpServlet {
 
     @Override
