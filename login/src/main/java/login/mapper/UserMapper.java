@@ -1,6 +1,7 @@
 package login.mapper;
 
 import login.mapper.entity.User;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * Description ==> TODO
@@ -14,6 +15,6 @@ public interface UserMapper {
 
     User selectUser(String username);
 
-    int insertUser(String username,String password);
+    int insertUser(@Param("username") String username,@Param("password") String password);
 
 }
