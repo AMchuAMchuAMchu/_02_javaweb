@@ -5,7 +5,10 @@
 <!--<mapper namespace="org.mybatis.example.BlogMapper">-->
 <mapper namespace="login.mapper.UserMapper">
 
-    <resultMap id="User" type="login.entity.User"/>
+    <resultMap id="User" type="login.mapper.entity.User"/>
+    <insert id="insertUser">
+        insert into user values(#{username},#{password})
+    </insert>
 
     <select id="selectUser" resultMap="User">
         select * from user where username = #{username}

@@ -1,6 +1,6 @@
 package login.mapper;
 
-import login.entity.User;
+import login.mapper.entity.User;
 
 /**
  * Description ==> TODO
@@ -13,5 +13,7 @@ import login.entity.User;
 public interface UserMapper {
 
     User selectUser(String username);
+
+    int insertUser(String username,String password);
 
 }

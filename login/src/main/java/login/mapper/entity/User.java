@@ -1,4 +1,4 @@
-package login.entity;
+package login.mapper.entity;
 
 import lombok.Data;
 
